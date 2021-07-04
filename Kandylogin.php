@@ -9,15 +9,15 @@ session_start();
 // }
  
 // Include config file
-$server = "localhost";
-$user = "root";
-$pass = "password";
-$db = "Hackathon1";
+// $server = "localhost";
+// $user = "root";
+// $pass = "password";
+// $db = "Hackathon1";
 
-$conn = mysqli_connect($server,$user,$pass,$db);
-if($conn === false){
-    die("ERROR: Could not connect. ". mysqli_connect_error());
-}
+// $conn = mysqli_connect($server,$user,$pass,$db);
+// if($conn === false){
+//     die("ERROR: Could not connect. ". mysqli_connect_error());
+// }
 
  
 // Define variables and initialize with empty values

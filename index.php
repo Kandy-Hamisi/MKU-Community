@@ -121,6 +121,16 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
+
+
+        <section class="about-team">
+          <div class="about-us">
+            <div class="about-intro">
+              <h1>About us</h1>
+              <hr>
+            </div>
+          </div>
+        </section>
      
  	</main>
 
