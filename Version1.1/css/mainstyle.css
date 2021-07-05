@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
 
 :root{
-    --clr-primary-200: rgb(144, 240, 203);
-
+    --clr-primary-200: rgba(139, 245, 204, 0.493);
+    --clr-primary-300: rgba(56, 78, 66, 0.493);
+    --clr-headings-700: rgb(233, 211, 138);
+    --clr-bg-primary-100: rgb(236, 236, 236);
     --fnt-primary-100: 'Arvo', serif;
 }
 
@@ -112,10 +114,17 @@ ul{
 /* hero section */
 
 .hero{
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/12.jpg) no-repeat center/cover;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/IMG-20210208-WA0022.jpg) no-repeat center/cover;
     height: 100vh;
 }
 
+@media (max-width: 800px){
+    .hero{
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/IMG-20210208-WA0022.jpg) no-repeat center/cover;
+        height: auto;
+        width: 100vw;
+    }
+}
 
 .hero-intro .hero-title{
     max-width: 50.5rem;
@@ -129,7 +138,7 @@ ul{
     align-items: center;
     padding: 15rem 25rem 0 25rem;
     text-align: center;
-    color: rgb(233, 211, 138);
+    color: var(--clr-headings-700);
     font-family: var(--fnt-primary-100);
 }
 
@@ -144,8 +153,12 @@ ul{
 
 /* about us section */
 
+.about-us{
+    padding: 2rem 0;
+}
+
 .about-us img{
-    height: auto;
+    height: 200px;
     max-width: 100%;
     
 }
@@ -155,7 +168,32 @@ ul{
     flex-flow: column;
     align-items: center;
     justify-content: space-evenly;
+    padding: 2rem 0;
 
+}
+
+.about-title{
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--clr-headings-700);
+    font-family: var(--fnt-primary-100);
+    padding: 2em 0;
+}
+.about-mku{
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    
+}
+.about-mku__paragraph{
+    text-align: center;
+    max-width: 40rem;
+    line-height: 1.5em;
+    font-weight: 500;
+    text-shadow: 1px 1px 1px #333;
+    font-size: 20px;
+    font-style: italic;
 }
 
 .about-container{
@@ -164,12 +202,51 @@ ul{
 
 .split-about__content{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
 }
 
 .abt__info{
-    display: flex;
+    /* display: flex;
     flex-flow: column wrap;
-    justify-content: center;
+    justify-content: center; */
     align-items: center;
+    text-align: center;
+    box-shadow: 3px 5px 5px 2px rgb(168, 214, 210);
+    border-radius: 5px;
+}
+
+.abt-info__heading{
+
+    font-weight: 700;
+    font-family: var(--fnt-primary-100);
+    padding: 1rem;
+}
+
+.abt__info .about-paragraph{
+    line-height: 1.5em;
+    font-weight: 500;
+    font-size: 1.2em;
+    padding: 1em;
+}
+
+
+/* Anyone can code section */
+.who-codes{
+    padding: 3rem 0;
+    background-color: var(--clr-bg-primary-100);
+}
+
+.who-codes img{
+    height: auto;
+    max-width: 100%;
+}
+
+.who-container{
+    padding: 0 4rem;
+}
+
+.split-who{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
