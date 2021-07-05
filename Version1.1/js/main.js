@@ -1,4 +1,9 @@
 $(document).ready(function(){
+
+    // initializing AOS on scroll
+    AOS.init();
+
+    
     var typed_strings = $('.typed').data('typed-items');
     typed_strings = typed_strings.split(',')
     new Typed('.typed',{
